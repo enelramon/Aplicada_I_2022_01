@@ -5,12 +5,9 @@ namespace EjemploEF.Data
     {
         public DbSet<Categorias> Categorias { get; set; }
 
-
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
             builder.UseSqlite(@"data source= DataBase\Prestamos.db");
-
         }
-
     }
 }
